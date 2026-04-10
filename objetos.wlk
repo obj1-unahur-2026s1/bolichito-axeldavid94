@@ -1,9 +1,14 @@
-object pepita {
-  var energy = 100
+object remera { 
+  const color = "rojo de lino"
+  const peso = 800 
 
-  method energy() = energy
+  method color() = color
+  method peso() = peso
+}
+object _pelota_{
+    const peso = 1300
+    const color = "parda de cuero"
 
-  method fly(minutes) {
-    energy = energy - minutes * 3
-  }
+    method peso() = peso
+    method color() = color
 }
