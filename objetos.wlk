@@ -1,29 +1,34 @@
-object rosa {
-  method leGusta(objeto){
-    return objeto.peso() < 2000
-  }
-}
+
 object remera { 
-  method peso() = 800
-  method color() = rojo
-  method material() = lino
+  method pesoDeLaRemera() = 800
+  method colorDeLaRemera() = rojo
+  method materialDeLaRemera() = lino
 }
 object pelota {
-  method peso() = 1300
-  method color() = pardo
-  method material() = cuero 
+  method pesoDeLaPelota() = 1300
+  method colorDeLaPelota() = pardo
+  method materialDeLaPelota() = cuero 
 }
-pesoobject biblioteca {
-  const peso = 8000
-  const color = verde
-  method peso() = peso
-  method color() = color
+object biblioteca {
+  method pesoDeLaBiblioteca() = 8000
+  method colorDeLaBiblioteca() = verde
+  method materialDeLaBiblioteca() = madera
 }
 object muñeco {
-  const peso = 4444
-  method peso() = peso
+  method pesoDelMuñeco(peso){
+    return self.pesoDelMuñeco(peso)
+  }
+  method colorDeMuñeco() = celeste
+  method materialDeMuñeco() = vidrio
 }
 object placa {
+  method colorDePlaca(color){
+    return self.colorDePlaca(color)
+  }
+  method pesoDePlaca(peso){
+    return self.pesoDePlaca(peso)
+  }
+  method materialDePlaca() = cobre
 }
 
 object rojo {
